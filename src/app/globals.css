@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@100;300;400;700&family=Open+Sans&family=Oswald:wght@700&family=Poppins:wght@400;900&family=Quattrocento+Sans&family=Raleway:wght@900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+  width: 100;
+  background: #965a1b;
+  align-items: center;
+}
+
+.infos {
+  display: flex;
+  width: 65vw;
+  gap: 1.56rem;
+  max-width: 1024px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  position: relative;
+  top: 5rem;
+
+  gap: 1.19rem;
+  width: 24.6875rem;
+  padding: 1.56rem 1.25rem;
+  border-radius: 2px;
+  font-family: Poppins;
+
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section p {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.entrada {
+  background-color: #5f3305;
+  color: #fff;
+}
+
+body {
+  background: #e5cf94;
+}
+
+main {
+  width: 100vw;
+  min-height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vh;
+  width: 65vw;
+  gap: 1.5rem;
+  height: 100%;
+  max-width: 1024px;
+}
+
+.add {
+  width: 201px;
+  height: 24px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5f3305;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logo {
+  margin-top: 1vh;
+  scale: 0.55;
+}
+
+.pedidos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
+
+.pedidos .nome {
+  color: #5f3305;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.pedidos .desc {
+  color: #5f3305;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pedidos .valor {
+  color: #5f3305;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pedidos .titulo {
+  color: #5f3305;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pedidos .total-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  height: 4.8125rem;
+  flex-shrink: 0;
+  background-color: #ffffffcc;
+  border-radius: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-total {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.delete-button button {
+  border: none;
+}
+
+
+
+@media(max-width: 940px){
+  .infos{
+    flex-direction: column;
+    width: auto;
+  }
+
+  section {
+    width: 70vw;
+  }
+
+  .add{
+    margin-top: 290px;
+  }
+
+  .body-container {
+    width: 80vw;
+    margin-top: 5rem;
+  }
+
+  .desc-total {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .total-card {
+    padding: 1rem;
+  }
+
+  .nome {
+    margin-bottom: 0.3rem;
+  }
+}
